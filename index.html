@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Opis audio i video w HTML">
+    <meta name="keywords" content="development, helion">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Bartosz Kołakowski">
+    <title>AudioVideo</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <p>Hymn USA</p>
+    <audio controls loop preload="auto">
+        <source src="audio/USAAnthem.ogg" type="audio/ogg">
+    </audio>
+    <p>Hymn Wielkiej Brytanii</p>
+    <audio controls autoplay loop>
+        <source src="audio/UKAnthem.oga" type="audio/ogg">
+    </audio>
+    <p>Przykładowe wideo</p>
+    <video controls width="50%" poster="img/ARILogo.png">
+        <source src="video/LADARI.mp4" type="video/mp4">
+        <track src="track/captionsEN.vtt" kind="subtitles" srclang="en" label="English" default>
+        <track src="track/captionsPL.vtt" kind="subtitles" srclang="pl" label="Polski">
+    </video>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Mg7i3N4PlZg?si=onpT8AuhtxkUSjNM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <p>
+        Wynik polecenia: <samp>Podstawowa operacja zakończona sukcesem.</samp>
+    </p>
+</body>
+</html>
